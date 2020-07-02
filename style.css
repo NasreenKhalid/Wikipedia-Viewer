@@ -1,0 +1,140 @@
+body{
+    background-color: #ff9800;
+    color:#ffffff;
+    margin:0;
+}
+
+#search{
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    margin-left: 170px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#search.on{
+    animation: animate1 0.7s linear 1;
+}
+
+/* Cirle of the search icon */
+input{
+    box-sizing: border-box;
+    width:50px;
+    height: 50px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background: none;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: 0;
+    transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
+    transition-delay: 0.4s;
+    transform: translate(-100%,-50%);
+    
+}
+
+.search{
+    background: none;
+    position: absolute;
+    top:0px;
+    left:0;
+    height: 50px;
+    width:50px;
+    padding: 0;
+    border-radius: 100%;
+    outline: 0;
+    border:0;
+    color:inherit;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: translate(-100%,-50%);
+}
+/* The line of search circle */
+.search:before{
+content: "";
+position: absolute;
+width: 20px;
+height: 4px;
+background-color: #fff;
+transform: rotate(45deg);
+margin-top: 26px;
+margin-left: 17px;
+transition: 0.2s ease-in-out;
+}
+
+.close:before{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    margin-top: -1px;
+margin-left: -13px;
+background-color: #ffffff;
+transform: rotate(45deg);
+transition: 0.2s ease-in-out;
+}
+
+.close:after{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 4px;
+    margin-top: -1px;
+margin-left: -13px;
+background-color: #ffffff;
+transform: rotate(-45deg);
+cursor: pointer;
+}
+
+/* Input Rectangle Box */
+.square{
+    box-sizing: border-box;
+    padding: 0 40px 0 10px;
+    width:200px;
+    height: 50px;
+    border: 4px solid #ffffff;
+    border-radius: 0;
+    background: none;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: 0;
+    transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+    transition-delay: 0.4s,0s,0.4s;
+    transform: translate(-100%,-50%);
+}
+
+p{
+    margin-left: -320px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 400;
+text-align: center;
+color:rgb(37, 5, 219);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.random{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+justify-content: center;
+flex-direction: column;
+font-size: 28px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
